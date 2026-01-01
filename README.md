@@ -16,7 +16,7 @@ All experiments were conducted under a standard Python scientific computing envi
 
 The hyperparameters used in the experiments, including learning rate, regularization coefficients, and threshold parameters, are specified in the experiment scripts under the `experiments` directory.
 
-- First, determine the regularization coefficients (`lambda1` and `lambda2`) within the range [0.0001, 0.05] to ensure the model forms reasonable sparsity.  
+- First, determine the regularization coefficients (`lambda1` and `lambda2`) within the range [0.0001, 0.001] to ensure the model forms reasonable sparsity.  
 - Next, set the threshold parameters (`gamma1` and `gamma2`) based on dataset dimensionality:  
   - For low-dimensional datasets, use the 75th percentile (P75) and adjust `gamma` within [-1, 1].  
   - For high-dimensional datasets, use the maximum value (P100) and adjust `gamma` within [0, 1].
